@@ -15,10 +15,15 @@ An unsupervised machine learning project focused on applying and understanding c
 The project includes:
 
 🔹 Loading and preprocessing the dataset. 
+
 🔹 Feature scaling for distance-based algorithms.
+
 🔹 Implementation of KMeans clustering.
+
 🔹 Implementation of Hierarchical clustering.
+
 🔹 Cluster visualization and interpretation.
+
 🔹 Clear explanations.
 
 ---
