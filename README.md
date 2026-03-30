@@ -1,6 +1,16 @@
 # 🌸 Iris Dataset Clustering Analysis
 
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Data Analysis](https://img.shields.io/badge/DataAnalysis-EDA-orange)
+![Visualization](https://img.shields.io/badge/Visualization-Seaborn-green)
+![Platform](https://img.shields.io/badge/Platform-Google%20Colab-yellow)
+
 An unsupervised machine learning project focused on applying and understanding clustering techniques using the classic Iris dataset.
+
+---
+
+## 🚀 Run Notebook in Google Colab
+[Open In Colab](https://colab.research.google.com/drive/1--gIB5m5EJM6buqbgIo4LsfpblftsZX2)
 
 ---
 
@@ -10,21 +20,18 @@ An unsupervised machine learning project focused on applying and understanding c
 - Since clustering is an **unsupervised learning task**, the target labels (species) are intentionally excluded during model training.
 - The objective is to group similar data points based on feature similarity and visualize the resulting clusters.
 
-**🎯 Objective:**
+---
+
+## 🎯 Objective
 
 The project includes:
 
-🔹 Loading and preprocessing the dataset. 
-
-🔹 Feature scaling for distance-based algorithms.
-
-🔹 Implementation of KMeans clustering.
-
-🔹 Implementation of Hierarchical clustering.
-
-🔹 Cluster visualization and interpretation.
-
-🔹 Clear explanations.
+🔹 Loading and preprocessing the dataset  
+🔹 Feature scaling for distance-based algorithms  
+🔹 Implementation of KMeans clustering  
+🔹 Implementation of Hierarchical clustering  
+🔹 Cluster visualization and interpretation  
+🔹 Clear explanations  
 
 ---
 
@@ -39,112 +46,140 @@ The **Iris dataset** consists of measurements of iris flowers belonging to three
 | Petal Length | Length of the petal (cm) |
 | Petal Width | Width of the petal (cm) |
 
-> Note: The **species column is dropped** during preprocessing since clustering.
-> does not use class labels.
+> Note: The **species column is dropped** during preprocessing since clustering does not use class labels.
 
 ---
 
 ## 🧹 Preprocessing Steps
 
-The following preprocessing steps were performed before applying clustering:
-
-✔ **Dataset Loading:**  
-The Iris dataset was loaded using `load_iris()` from the sklearn library.
-
-✔ **DataFrame Conversion:**  
-The feature data was converted into a Pandas DataFrame for easier analysis.
-
-✔ **Data Quality Checks:**  
-The dataset was checked for **missing values**, **duplicate records**, and **outliers** to ensure data consistency and reliability before clustering.
-
-✔ **Label Removal:**  
-The species column was excluded to ensure the task remains unsupervised.
-
-✔ **Feature Scaling:**  
-Standardization was applied using `StandardScaler` to ensure all features contribute equally to distance calculations.
+✔ Dataset loaded using `load_iris()` from sklearn  
+✔ Converted into Pandas DataFrame  
+✔ Checked for missing values, duplicates, and outliers  
+✔ Species column removed (unsupervised learning)  
+✔ Feature scaling applied using `StandardScaler`  
 
 ---
 
 ## 📌 Clustering Algorithms Implemented
 
 ### 🔹 KMeans Clustering
+- Centroid-based clustering  
+- Elbow Method used  
+- Optimal clusters: **k = 3**  
 
-- KMeans clustering partitions data into a predefined number of clusters by minimizing the distance between data points and their assigned cluster centroids.
-- The **Elbow Method** was used to determine the optimal number of clusters.
-- Based on the elbow plot, **k = 3** was selected as it provided a clear balance between compactness and simplicity.
-
-**Visualization:**
-- Scatter plots were used to visualize the clusters formed by KMeans.
+### 🔹 Hierarchical Clustering
+- Agglomerative approach  
+- Dendrogram visualization  
+- Final clusters: **3**  
 
 ---
 
-### 🔹 Hierarchical Clustering
+## 📊 Model Comparison
 
-- Hierarchical clustering builds clusters step by step based on the distance between data points.
-- Initially, each data point is treated as its own cluster, and the closest clusters are repeatedly merged.
-- A **dendrogram** was used to visualize the hierarchical merging process.
-- By cutting the dendrogram at an appropriate distance, three meaningful clusters were identified.
+| Model         | Silhouette Score |
+|--------------|------------------|
+| K-Means      | 0.459948         |
+| Hierarchical | 0.446689         |
 
-**Visualization:**
-- Dendrogram for hierarchical structure.
-- Scatter plot for final cluster representation.
+🏆 **Best Model:** K-Means (Silhouette Score = 0.460)
 
 ---
 
 ## 📊 Visualizations Included
 
-| Purpose | Visualization Type |
-|------|-------------------|
-| Optimal cluster selection | Elbow plot |
-| KMeans cluster visualization | Scatter plot |
-| Hierarchical structure | Dendrogram |
-| Cluster comparison | Scatter plot |
-
-All visualizations were chosen based on the nature of the data and clustering task.
+- Elbow Plot  
+- KMeans Scatter Plot  
+- Dendrogram  
+- Cluster Scatter Comparison  
 
 ---
 
 ## 🧠 Key Observations
 
-- ✔ Feature scaling significantly improves clustering performance.
-- ✔ KMeans efficiently grouped data into compact clusters.
-- ✔ Hierarchical clustering provided a clear visual understanding of cluster formation.
-- ✔ Both methods produced meaningful clusters on the Iris dataset.
-- ✔ Dimensionality reduction helped improve visualization clarity.
+✔ Feature scaling improves clustering performance  
+✔ KMeans creates compact clusters  
+✔ Hierarchical clustering improves interpretability  
+✔ Both methods produce meaningful clusters  
+✔ Dimensionality reduction enhances visualization  
 
 ---
 
 ## 🛠 Tech Stack
 
 | Tool | Purpose |
-|----|--------|
-| Python | Programming language |
-| Pandas | Data manipulation |
-| NumPy | Numerical operations |
-| Matplotlib | Data visualization |
-| Scikit-learn | Clustering algorithms |
-| Google Colab | Execution environment |
+|------|--------|
+| Python | Programming |
+| Pandas | Data handling |
+| NumPy | Computation |
+| Matplotlib | Visualization |
+| Seaborn | Visualization |
+| Scikit-learn | ML algorithms |
+| Google Colab | Execution |
 
 ---
 
 ## 📁 Repository Structure
 
-ML-Assignment-5-Clustering/
+ML-Assignment-5-Clustering/  
 
-├── 📄 Clustering_and_Dimensionality_Reduction.ipynb  
-├── 📄 README.md  
+│  
 
----
+├── Clustering_and_Dimensionality_Reduction.ipynb 
 
-## 🚀 How to Run the Project
-
-1. Open the notebook in **Google Colab**.
-2. Run all cells sequentially from top to bottom.
-3. The notebook will perform preprocessing, clustering, and visualization automatically.
+└── README.md  
 
 ---
 
-## 📌 Submission Note
+## 🚀 How to Run
 
-This repository is submitted as part of an academic assignment to demonstrate the application of **clustering techniques in unsupervised learning**.
-All explanations and results are strictly based on the implemented code.
+1. Open the notebook in Google Colab  
+2. Run all cells sequentially  
+3. View clustering outputs and visualizations  
+
+---
+
+## ⚠️ Limitations
+
+- Small dataset (150 samples) 
+- Limited feature complexity  
+- Sensitive to scaling and distance metrics  
+- No advanced clustering techniques used  
+- Limited parameter tuning  
+
+---
+
+## 📌 Academic Submission
+
+This project is part of a Machine Learning academic assignment demonstrating **unsupervised learning and clustering techniques**.
+
+---
+
+## 📌 Future Enhancements
+
+- Implement DBSCAN and Gaussian Mixture Models
+- 
+- Apply PCA for dimensionality reduction
+- 
+- Perform hyperparameter tuning
+- 
+- Build a Streamlit dashboard
+- 
+- Test on larger datasets  
+
+---
+
+## 👤 Author
+
+**Name:** Laya Mary Joy  
+
+**Organization:** Entri Elevate
+
+**Date:** January 27, 2026  
+
+---
+
+## ⭐ Acknowledgment
+
+Thanks to **Entri Elevate** for guidance and support.  
+
+---
