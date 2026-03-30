@@ -13,7 +13,7 @@ An unsupervised machine learning project focused on applying and understanding c
 
 Click below to open the notebook:
 
-[Open In Colab](https://colab.research.google.com/drive/1--gIB5m5EJM6buqbgIo4LsfpblftsZX2)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1--gIB5m5EJM6buqbgIo4LsfpblftsZX2)
 
 ---
 
