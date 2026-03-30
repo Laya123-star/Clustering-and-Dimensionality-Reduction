@@ -10,7 +10,10 @@ An unsupervised machine learning project focused on applying and understanding c
 ---
 
 ## 🚀 Run Notebook in Google Colab
-[Open In Colab](https://colab.research.google.com/drive/1--gIB5m5EJM6buqbgIo4LsfpblftsZX2)
+
+Click below to open the notebook:
+
+[![Open In Colab](https://colab.research.google.com/drive/1--gIB5m5EJM6buqbgIo4LsfpblftsZX2)
 
 ---
 
